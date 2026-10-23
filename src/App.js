@@ -1,28 +1,25 @@
-import { useState } from "react";
-import Naglowek from "./components/Naglowek";
-import UczestnikCard from "./components/UczestnikCard";
-import uczestnicy from "./data";
-import "./App.css";
- 
+import logo from './logo.svg';
+import './App.css';
+
 function App() {
-  const [wybranyId, setWybranyId] = useState(null);
- 
-  const handleSelect = (id) => setWybranyId(wybranyId === id ? null : id);
- 
   return (
-    <div className="app">
-      <Naglowek tytul="Katalog uczestników kursu React" />
-      <div className="lista">
-        {uczestnicy.map((u) => (
-          <UczestnikCard
-            key={u.id}
-            uczestnik={u}
-            rozwiniety={wybranyId === u.id}
-            onSelect={handleSelect}
-          />
-        ))}
-      </div>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
+
 export default App;
