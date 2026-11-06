@@ -1,12 +1,6 @@
-
 function TaskStats({ tasks }) {
-
     const totalTasks = tasks.length;
-  
-    const completedTasks = tasks.filter(
-      (task) => task.completed
-    ).length;
-  
+    const completedTasks = tasks.filter((task) => task.completed).length;
     const activeTasks = totalTasks - completedTasks;
   
     return (
@@ -31,5 +25,4 @@ function TaskStats({ tasks }) {
     );
   }
   
-  export default TaskStats;
-  
+export default TaskStats;
