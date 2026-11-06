@@ -1,0 +1,107 @@
+
+.app {
+  width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: gray;
+}
+
+/* Statistics */
+
+.task-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.stat {
+  background-color: lightgray;
+  padding: 10px;
+  width: 30%;
+  text-align: center;
+}
+
+.stat h3 {
+  color: blue;
+  margin: 5px;
+}
+
+.stat p {
+  margin: 5px;
+}
+
+/* Add task */
+
+.add-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-form input {
+  flex: 1;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Filters */
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  background-color: gray;
+}
+
+.filters .active-filter {
+  background-color: blue;
+}
+
+/* Task list */
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.delete-button {
+  background-color: red;
+}
+
+.empty-message {
+  text-align: center;
+  color: gray;
+}
