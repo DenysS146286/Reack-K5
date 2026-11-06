@@ -6,7 +6,7 @@ function AddTaskForm({ onAddTask }) {
   function handleSubmit(e) {
     e.preventDefault();
 
-    if (task.trim() === "") return;
+    if (task.trim() === "") { return };
 
     onAddTask(task.trim());
 

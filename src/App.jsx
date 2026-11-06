@@ -12,7 +12,7 @@ function App() {
   function addTask(title) {
     const newTask = { id: Date.now(), title: title, completed: false};
 
-    setTasks([...tasks, newTask]);
+    setTasks([tasks, newTask]);
   }
 
   function toggleTask(id) {
